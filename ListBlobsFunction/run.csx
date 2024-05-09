@@ -27,3 +27,5 @@ public static async Task<IActionResult> Run(HttpRequest req, ILogger log)
 
     return new OkObjectResult(blobNames);
 }
+
+// So excited to see this working
