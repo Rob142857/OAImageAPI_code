@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_FUNCTIONAPP_PACKAGE_PATH: './ListBlobFunction' # set this to the path to your web app project, defaults to the repository root
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: '.' # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '8.0.x' # set this to the dotnet version to use
 
 jobs:
@@ -38,9 +38,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_4E66294310FA48EDA96942A53519D46D }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_AD987110EEA0456E95CAB4C1A12363E0 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_94FAD24EC0574ECF8C621F305A344AAB }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_A67C6C5C339F46909A4944BA3D4D98E1 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_B00E1D15130C45CB8C5DB772A12FE880 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_9CC75E8E7A4E4529A878629EB3A4BFA5 }}
 
       - name: 'Run Azure Functions Action'
         uses: Azure/functions-action@v1
